@@ -106,10 +106,62 @@
     border: 2px solid red;
     flex-shrink: 0;
     flex-grow: 1;
-    padding: 20px 15px;
+    padding: 30px 30px;
     flex-basis: calc(((var(--display) - var(--padding-container) * 2) / var(--clmn-n)) - (((var(--clmn-n) - 1) * var(--clmn-gap)) / var(--clmn-n)));
 }
 
+.price {
+    margin-top: 20px;
+    text-align: center;
+}
 
+.dollar, .prezzo {
+    font-weight: 900;
+}
+
+.prezzo {
+    font-size: 3rem;
+}
+
+.percentage {
+    margin-top: 10px;
+    background-color: rgb(224, 222, 222);
+    border-style: none;
+    border-radius: 6px;
+    padding: 4px 8px;
+}
+
+.purple-b {
+    background-color: blueviolet;
+    color: white;
+}
+
+.white-b {
+    background-color: white;
+    color: blueviolet;
+}
+
+.choose-plan {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding: 20px 0;
+    width: 100%;
+    border-radius: 10px;
+    border-style: none;
+    font-weight: 600;
+}
+
+.choose-plan:hover {
+    transform: translate(0, -3%);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+
+li {
+    list-style: none;
+    padding: 10px 0;
+    font-size: 1.1rem;
+}
 
 
