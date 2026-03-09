@@ -9,13 +9,30 @@
 
 /*Utils*/
 
+:root {
+    --display: 1012px;
+    --clmn-gap: 30px;
+    --clmn-n: 3;
+    --padding-container: 15px
+}
+
 .container {
-    max-width: 1012px;
+    max-width: var(--display);
     margin: 0 auto;
+    padding: 0 15px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .grayfont {
     color: rgb(74, 73, 73);
+}
+
+.description {
+    font-size: 0.9rem;
 }
 
 /*General*/
@@ -26,7 +43,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 40px;
+    margin-top: 30px;
+    margin-bottom: 50px;
 }
 
 .actions {
@@ -75,7 +93,22 @@
     margin-right: 5px;
 }
 
+/*Cards*/
 
+.cards {
+    display: flex;
+    gap: var(--clmn-gap);
+    flex-wrap: wrap;
+    
+}
+
+.card {
+    border: 2px solid red;
+    flex-shrink: 0;
+    flex-grow: 1;
+    padding: 20px 15px;
+    flex-basis: calc(((var(--display) - var(--padding-container) * 2) / var(--clmn-n)) - (((var(--clmn-n) - 1) * var(--clmn-gap)) / var(--clmn-n)));
+}
 
 
 
