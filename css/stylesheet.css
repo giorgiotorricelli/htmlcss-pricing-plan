@@ -31,6 +31,10 @@
     color: rgb(74, 73, 73);
 }
 
+.whitefont {
+    color: white;
+}
+
 .description {
     font-size: 0.9rem;
 }
@@ -129,6 +133,11 @@
     border-style: none;
     border-radius: 6px;
     padding: 4px 8px;
+}
+
+.recommended {
+    background-color: blueviolet;
+    color: white;
 }
 
 .purple-b {
