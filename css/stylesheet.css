@@ -10,9 +10,73 @@
 /*Utils*/
 
 .container {
-    max-width: 1024px;
+    max-width: 1012px;
     margin: 0 auto;
 }
 
+.grayfont {
+    color: rgb(74, 73, 73);
+}
+
 /*General*/
+
+/*--------------------------*/
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    align-self: flex-start;
+    column-gap: 5px;
+}
+
+.incipit, .actions {
+    border: 2px solid red;
+}
+
+.monthly, .yearly {
+    width: 28px;
+    height: 18px;
+    border: 2px solid black;
+    border-radius: 10px;
+    position: relative;
+}
+
+/*Pallino bottone*/
+.bi-toggle-on {
+    font-size: 26px;
+    position: absolute;
+    top: 0;
+    translate: -50% -20%;
+}
+
+.yearly:focus {
+    transform: scaleX(-1);
+    filter: invert(100%);
+    outline: 2px solid white;
+    outline-offset: -2px;
+}
+
+.monthly:focus {
+    transform: scaleX(-1);
+    filter: invert(100%);
+    outline: 2px solid white;
+    outline-offset: -2px;
+}
+
+
+.monthly {
+    margin-right: 5px;
+}
+
+
+
+
+
 
